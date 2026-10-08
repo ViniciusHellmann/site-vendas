@@ -1,5 +1,5 @@
 // CONFIGURE AQUI O SEU WHATSAPP
-const WHATSAPP = "5548998457338";
+const WHATSAPP = "55489999999";
 
 const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
