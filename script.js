@@ -9,9 +9,8 @@ const WHATSAPP = "5548998457338";
 
 const isSupabaseConfigured =
   SUPABASE_URL.startsWith("https://") &&
-  !SUPABASE_URL.includes("voclgnvagmpkvmdknjti.supabase.co") &&
-  SUPABASE_PUBLISHABLE_KEY &&
-  !SUPABASE_PUBLISHABLE_KEY.includes("sb_publishable_wA7Zqo4Bc7rRsDZyh2osyA_ngX1ryMe");
+  SUPABASE_URL.endsWith("voclgnvagmpkvmdknjti.supabase.co") &&
+  SUPABASE_PUBLISHABLE_KEY.startsWith("sb_publishable_wA7Zqo4Bc7rRsDZyh2osyA_ngX1ryMe");
 
 const supabaseClient =
   isSupabaseConfigured && window.supabase
