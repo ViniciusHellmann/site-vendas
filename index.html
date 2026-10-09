@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sites profissionais, modernos e responsivos para empresas e profissionais.">
   <title>WebForge — Sites que vendem</title>
@@ -145,7 +145,7 @@
           <label for="type">Tipo de projeto</label><select id="type" required><option value="">Selecione</option><option>Site institucional</option><option>Landing page</option><option>Site para vendas</option><option>Loja virtual</option><option>Manutenção</option><option>Outro</option></select>
           <label for="message">Conte sobre o projeto</label><textarea id="message" rows="5" placeholder="Ex.: Tenho uma empresa de..."></textarea>
           <button class="btn primary wide" type="submit">Enviar pelo WhatsApp →</button>
-          <small>Você será direcionado para o WhatsApp.</small>
+          <small id="formStatus" role="status" aria-live="polite">Seus dados serão enviados com segurança para solicitar o orçamento e o WhatsApp será aberto.</small>
         </form>
       </div>
     </section>
@@ -161,6 +161,7 @@
   </footer>
 
   <a id="whatsappFloat" class="whatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">◔</a>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
 </html>
